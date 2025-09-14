@@ -1,4 +1,4 @@
-import "company.css";
+import "./company.css";
 
 const Company = () =>{
     return(

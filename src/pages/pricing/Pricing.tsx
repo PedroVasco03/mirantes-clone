@@ -1,3 +1,5 @@
+import "./pricing.css";
+
 const Pricing = () => {
     return(
         <>

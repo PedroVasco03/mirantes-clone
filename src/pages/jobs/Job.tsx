@@ -1,4 +1,4 @@
-import "job.css";
+import "./job.css";
 
 const Job = () =>{
     return(

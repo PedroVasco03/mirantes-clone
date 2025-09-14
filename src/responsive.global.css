@@ -1,0 +1,98 @@
+/* === Responsive baseline (added by ChatGPT) === */
+
+/* Universal box sizing for predictable layouts */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Make images and embedded media scale */
+img, video, canvas, svg { max-width: 100%; height: auto; display: block; }
+
+/* Prevent horizontal scroll on small screens */
+html, body { width: 100%; overflow-x: hidden; }
+
+/* Typographic scale that adapts */
+:root {
+  --step--1: clamp(0.83rem, 0.81rem + 0.10vw, 0.90rem);
+  --step-0: clamp(1.00rem, 0.94rem + 0.30vw, 1.13rem);
+  --step-1: clamp(1.20rem, 1.08rem + 0.56vw, 1.41rem);
+  --step-2: clamp(1.44rem, 1.24rem + 0.91vw, 1.76rem);
+  --step-3: clamp(1.73rem, 1.41rem + 1.37vw, 2.20rem);
+  --step-4: clamp(2.07rem, 1.59rem + 1.98vw, 2.75rem);
+}
+
+/* Utility container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Fluid grids (opt-in by adding classes) */
+.row { display: flex; flex-wrap: wrap; gap: 1rem; }
+.col { flex: 1 1 0; min-width: 0; }
+.col-2 { flex: 0 0 calc(50% - 0.5rem); }
+.col-3 { flex: 0 0 calc(33.333% - 0.67rem); }
+.col-4 { flex: 0 0 calc(25% - 0.75rem); }
+
+/* Common components */
+.header, header { position: relative; }
+nav ul { display: flex; flex-wrap: wrap; gap: 0.75rem; padding: 0; margin: 0; list-style: none; }
+nav a { text-decoration: none; }
+
+/* Tables: allow wrapping and horizontal scroll if needed */
+.table-responsive { width: 100%; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+
+/* Forms */
+input, select, textarea, button { max-width: 100%; }
+
+/* Cards grid helper */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+}
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* Breakpoints */
+@media (max-width: 1200px) {
+  .grid-4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 992px) {
+  .col-4 { flex-basis: calc(33.333% - 0.67rem); }
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  nav ul { gap: 0.5rem; }
+}
+
+@media (max-width: 768px) {
+  /* Stack columns on small screens */
+  .row { gap: 0.75rem; }
+  .col-2, .col-3, .col-4 { flex: 1 1 100%; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+
+  /* Optional: collapse nav into vertical list if not already responsive */
+  nav ul { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: var(--step-0); }
+  h1 { font-size: var(--step-4); }
+  h2 { font-size: var(--step-3); }
+  h3 { font-size: var(--step-2); }
+}
+
+/* Helpers */
+.hide-on-mobile { display: initial; }
+@media (max-width: 768px) { .hide-on-mobile { display: none !important; } }
+.show-on-mobile { display: none; }
+@media (max-width: 768px) { .show-on-mobile { display: block !important; } }
+
+/* Make fixed widths more forgiving */
+[class*="sidebar"], [class*="aside"] { max-width: 100%; }
+[class*="content"] { max-width: 100%; }
+
+/* Buttons wrap instead of overflowing */
+button, .btn { white-space: normal; }

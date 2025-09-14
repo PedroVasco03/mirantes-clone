@@ -1,0 +1,15 @@
+.featuresTextContainer{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.featuresTextContainer h2{
+    margin:0;
+    font-size:22px;
+}
+
+.featureContent{
+    color: var(--muted);
+    margin-top:8px;
+}

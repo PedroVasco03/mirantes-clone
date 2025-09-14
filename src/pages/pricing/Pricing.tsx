@@ -1,12 +1,12 @@
 import Footer from "../../components/footer/Footer";
+import Layout from "../../components/layout/Layout";
 import Nav from "../../components/navbar/Nav";
 import PlanCard from "../../components/planCard/PlanCard";
 import "./pricing.css";
 
 const Pricing = () => {
     return(
-        <main>
-            <Nav/>
+        <Layout>
             <section className="section container">
                 <h2>Planos</h2>
                 <div className="pricing-grid">
@@ -33,8 +33,7 @@ const Pricing = () => {
                     />
                 </div>
             </section>
-            <Footer/>
-        </main>
+        </Layout>
     )
 }
 

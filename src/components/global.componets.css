@@ -75,8 +75,17 @@
   --ring:rgba(59,130,246,0.35);
 }
 
-html,body{background:var(--bg);color:var(--text);}
+html,body,#root{background:var(--bg);color:var(--text); height: 100%; margin: 0;}
 a{color:var(--text);}
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh; 
+}
+
+.content {
+  flex: 1; 
+}
 .container{max-width:1120px;margin:0 auto;padding:0 16px;}
 
 /* navbar */

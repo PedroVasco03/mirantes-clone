@@ -1,13 +1,11 @@
-import Footer from "../../components/footer/Footer";
-import Nav from "../../components/navbar/Nav";
+import Layout from "../../components/layout/Layout";
 import "./courses.css";
 
 const Courses = () =>{
     return(
-        <main>
-            <Nav/>
-            <Footer/>
-        </main>
+         <Layout>
+            <></>
+        </Layout>
     )
 } 
 

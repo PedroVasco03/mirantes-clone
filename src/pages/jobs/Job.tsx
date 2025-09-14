@@ -1,8 +1,13 @@
+import Footer from "../../components/footer/Footer";
+import Nav from "../../components/navbar/Nav";
 import "./job.css";
 
 const Job = () =>{
     return(
-        <section></section>
+        <main>
+            <Nav/>
+            <Footer/>
+        </main>
     )
 } 
 

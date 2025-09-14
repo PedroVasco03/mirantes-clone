@@ -1,8 +1,13 @@
+import Footer from "../../components/footer/Footer";
+import Nav from "../../components/navbar/Nav";
 import "./faq.css";
 
 const Faq = () =>{
     return(
-        <section></section>
+        <main>
+            <Nav/>
+            <Footer/>
+        </main>
     )
 } 
 

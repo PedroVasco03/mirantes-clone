@@ -1,8 +1,13 @@
+import Footer from "../../components/footer/Footer";
+import Nav from "../../components/navbar/Nav";
 import "./company.css";
 
 const Company = () =>{
     return(
-    <section></section>
+    <main>
+        <Nav/>
+        <Footer/>
+    </main>
     )
 } 
 

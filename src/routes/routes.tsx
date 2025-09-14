@@ -18,7 +18,7 @@ export default function AppRoutes() {
         <Route path="/company" element={<Company/>}></Route>
         <Route path="/courses" element={<Courses />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/princing" element={<Pricing />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/job" element={<Job />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>

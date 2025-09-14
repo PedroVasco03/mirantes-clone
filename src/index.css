@@ -37,3 +37,29 @@ html,body{
 
 a{color:var(--text);text-decoration:none}
 .container{max-width:1120px;margin:0 auto;padding:0 16px;}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1220; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d4ed8;   
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #163eb3;    
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1d4ed8 #0b1220;
+}

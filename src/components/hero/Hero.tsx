@@ -4,7 +4,7 @@ import "./hero.css";
 const Hero = () => {
     return(
         <>
-           <section className="hero container">
+           <section className="hero container my-5">
                 <div className="hero-grid">
                     <div>
                     <div className="kicker">Feira Digital · Angola</div>
@@ -19,10 +19,10 @@ const Hero = () => {
                     <div className="hero-card">
                     <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
                         <div>
-                        <div style={{fontWeight:'800',fontSize:'18px'}}>App Preview</div>
-                        <div style={{color:'var(--muted)',marginTop:'8px'}}>Veja como sua oferta aparece para candidatos.</div>
+                        <div style={{fontWeight:'800',fontSize:'18px'}}>MIRANTES</div>
+                        <div style={{color:'var(--muted)',marginTop:'8px'}}>O futuro em um clique, cultura e inovação em um único clique. Nunca foi tão fácil.</div>
                         </div>
-                        <div style={{width:'120px',height:'80px',borderRadius:'12px',background:'linear-gradient(90deg,#112131,#0b1116)',display:'flex',alignItems:'center',justifyContent:'center',color:'var(--muted)'}}>Mock</div>
+                        <div style={{width:'120px',height:'80px',borderRadius:'12px',background:'linear-gradient(90deg,#112131,#0b1116)',display:'flex',alignItems:'center',justifyContent:'center',color:'var(--muted)'}}>MI</div>
                     </div>
                     <div className="infoCard">
                         <div className="cardBtn"><strong>Vagas</strong><div style={{color:'var(--muted)',marginTop:'6px'}}>Candidaturas rápidas</div></div>

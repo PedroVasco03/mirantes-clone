@@ -2,6 +2,9 @@ import { FaFacebook, FaGoogle, FaApple } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+    const FacebookIcon = FaFacebook as unknown as React.FC<{ size?: number }>;
+    const GoogleIcon = FaGoogle as unknown as React.FC<{ size?: number }>;
+    const AppleIcon = FaApple as unknown as React.FC<{ size?: number }>;
   return (
     <div className="min-h-screen bg-[#0b1220] flex items-center justify-center p-4">
       <div className="bg-[#111827] rounded-2xl shadow-lg w-full max-w-md p-6">
@@ -65,13 +68,13 @@ const Register = () => {
         {/* Social login */}
         <div className="flex justify-center gap-4">
           <button className="p-3 bg-[#1f2937] rounded-full text-blue-500 hover:bg-blue-600/20">
-            <FaFacebook size={20} />
+            <FacebookIcon size={20} />
           </button>
           <button className="p-3 bg-[#1f2937] rounded-full text-red-500 hover:bg-red-600/20">
-            <FaGoogle size={20} />
+            <GoogleIcon size={20} />
           </button>
           <button className="p-3 bg-[#1f2937] rounded-full text-gray-200 hover:bg-gray-600/20">
-            <FaApple size={20} />
+            <AppleIcon size={20} />
           </button>
         </div>
 

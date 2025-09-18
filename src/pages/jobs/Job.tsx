@@ -17,6 +17,9 @@ interface JobType {
 
 
 const Job = () =>{
+    const BriefcaseIcon = FaBriefcase as unknown as React.FC<{ size?: number }>;
+    const FilterIcon = FaFilter as unknown as React.FC<{ size?: number }>;
+    const PlusIcon = FaPlus as unknown as React.FC<{ size?: number }>;
     const [jobs, setJobs] = useState<JobType[]>([
     { id: 1, title: "Frontend Developer", company: "Tech Angola", location: "Luanda", type: "Remoto", level: "Pleno" },
     { id: 2, title: "Backend Developer", company: "SoftDev", location: "Remoto", type: "Híbrido", level: "Sênior" },
@@ -51,7 +54,7 @@ const Job = () =>{
                     <div className="flex items-center gap-3">
                         {/* Ícone da vaga */}
                         <div className="p-3 rounded-full bg-blue-600/20 text-blue-400">
-                        <FaBriefcase size={20} />
+                        <BriefcaseIcon size={20} />
                         </div>
 
                         {/* Infos principais */}
@@ -90,7 +93,7 @@ const Job = () =>{
                     whileHover={{ scale: 1.1 }}
                     onClick={() => setShowFilters(!showFilters)}   // 👈 toggle correto
                     >
-                    <FaFilter size={20} />
+                    <FilterIcon size={20} />
                     </motion.button>
 
                     {/* Botão Publicar Vaga */}
@@ -100,7 +103,7 @@ const Job = () =>{
                     whileHover={{ scale: 1.1 }}
                     onClick={() => setShowModal(true)}
                     >
-                    <FaPlus size={20} />
+                    <PlusIcon size={20} />
                     </motion.button>
                 </motion.div>
 

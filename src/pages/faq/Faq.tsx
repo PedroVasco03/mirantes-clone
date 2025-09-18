@@ -16,6 +16,8 @@ const faqItems: FaqItem[] = [
 ];
 
 const Faq = () =>{
+    const QuestionIcon = FaQuestion as unknown as React.FC<{ size?: number, className?: string }>;
+
     return(
          <Layout>
             <main className="py-8">
@@ -29,7 +31,7 @@ const Faq = () =>{
                         >
                         <strong className="block mb-1 text-base">{item.title}</strong>
                         <p className="text-gray-500 text-sm">{item.description}</p>
-                        <FaQuestion className="icone text-gray-400 group-hover:text-white transition" size={30}/>
+                        <QuestionIcon size={30} className="icone text-gray-400 group-hover:text-white transition" />
                         </div>
                     ))}
                     </div>

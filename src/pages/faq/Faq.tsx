@@ -20,8 +20,8 @@ const Faq = () =>{
 
     return(
          <Layout>
-            <main className="py-8">
-                <section className="container mx-auto px-4">
+            <main >
+                <section className="container section mx-auto px-4">
                     <h2 className="text-2xl font-bold mb-4">FAQ</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3">
                     {faqItems.map((item, index) => (

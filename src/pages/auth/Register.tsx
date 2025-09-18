@@ -1,4 +1,5 @@
 import { FaFacebook, FaGoogle, FaApple } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -40,9 +41,9 @@ const Register = () => {
             <input type="checkbox" className="accent-blue-600 mr-2" />
             <span>
               Eu aceito as{" "}
-              <a href="#" className="text-blue-500 hover:underline">
+              <Link to="/privpolicies" className="text-blue-500 hover:underline">
                 políticas e termos de privacidade
-              </a>
+            </Link>
             </span>
           </div>
 

@@ -1,4 +1,5 @@
 import { FaFacebook, FaGoogle, FaApple } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -32,9 +33,10 @@ const Login = () => {
             <label className="flex items-center gap-2">
               <input type="checkbox" className="accent-blue-600" /> Lembre de mim
             </label>
-            <a href="#" className="hover:text-blue-400">
-              Esqueceu a senha ?
-            </a>
+            <Link to="/forgot-password" className="text-sm text-blue-400 hover:underline">
+                Esqueci minha senha
+            </Link>
+
           </div>
 
           <button

@@ -6,7 +6,7 @@ import JobModal from "./JobModal";
 import "./job.css";
 import Layout from "../../components/layout/Layout";
 
-interface Job {
+interface JobType {
   id: number;
   title: string;
   company: string;
@@ -17,7 +17,7 @@ interface Job {
 
 
 const Job = () =>{
-    const [jobs, setJobs] = useState<Job[]>([
+    const [jobs, setJobs] = useState<JobType[]>([
     { id: 1, title: "Frontend Developer", company: "Tech Angola", location: "Luanda", type: "Remoto", level: "Pleno" },
     { id: 2, title: "Backend Developer", company: "SoftDev", location: "Remoto", type: "Híbrido", level: "Sênior" },
     { id: 3, title: "UI/UX Designer", company: "DesignPro", location: "Luanda", type: "Remoto", level: "Júnior" },
@@ -33,7 +33,7 @@ const Job = () =>{
    const [showModal, setShowModal] = useState(false);
    const [showFilters, setShowFilters] = useState(false);
 
-  const addJob = (job: Job) => {
+  const addJob = (job: JobType) => {
     setJobs((prev) => [...prev, job]);
   };
     return(

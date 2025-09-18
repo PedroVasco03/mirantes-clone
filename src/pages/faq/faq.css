@@ -1,0 +1,12 @@
+.card {
+  box-sizing: border-box;
+  position:relative;
+  height: auto !important;
+  
+}
+
+.icone{
+  position: absolute;
+  right: 0;
+  margin: 10px;
+}

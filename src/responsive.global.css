@@ -6,8 +6,8 @@
 /* Make images and embedded media scale */
 img, video, canvas, svg { max-width: 100%; height: auto; display: block; }
 
-/* Prevent horizontal scroll on small screens */
-html, body { width: 100%; overflow-x: hidden; }
+
+html, body { width: 100%;  overflow-x: hidden; }
 
 /* Typographic scale that adapts */
 :root {

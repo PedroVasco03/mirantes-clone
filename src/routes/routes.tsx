@@ -1,13 +1,15 @@
 // src/routes.tsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../pages/home/Home";
-import Auth from "../pages/auth/Auth";
+import Auth  from "../pages/auth/Auth";
 import Company from "../pages/company/Company";
 import Courses from "../pages/courses/Courses";
 import Faq from "../pages/faq/Faq";
 import Pricing from "../pages/pricing/Pricing";
 import Job from "../pages/jobs/Job";
 import Profile from "../pages/profile/Profile";
+import Login from "../pages/auth/Login";
+import Register from "../pages/auth/Register";
 
 export default function AppRoutes() {
   return (
@@ -21,6 +23,8 @@ export default function AppRoutes() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/job" element={<Job />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
       </Routes>
     </BrowserRouter>
   );

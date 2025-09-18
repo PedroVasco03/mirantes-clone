@@ -5,7 +5,7 @@ const Features = () =>{
         <section id="features" className="section container">
             <div className="featuresTextContainer" >
                 <h2>Como funciona</h2>
-                <a className="btn ghost" href="jobs.html">Ver todas as vagas</a>
+                <a className="btn ghost" href="/job">Ver todas as vagas</a>
             </div>
             <div className="features" style={{marginTop:'14px'}}>
                 <div className="feature"><strong>Crie o seu perfil</strong><div className="featureContent">Adicione competências, portfólio e certificados.</div></div>

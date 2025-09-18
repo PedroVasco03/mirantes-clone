@@ -1,4 +1,3 @@
-import BestCourse from "../../components/course/BestCourse"
 import Features from "../../components/features/Features"
 import Hero from "../../components/hero/Hero"
 import BestJob from "../../components/job/BestJob"
@@ -10,7 +9,6 @@ const Home = () => {
             <Hero/>
             <Features/>
             <BestJob/>
-            <BestCourse/>
         </Layout>
     )
 }

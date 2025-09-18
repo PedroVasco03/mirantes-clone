@@ -8,7 +8,7 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="layout">
+    <div className="layout bg-[#111827] ">
         <Nav/>
         <main className="content">{children}</main>
         <Footer />

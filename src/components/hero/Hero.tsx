@@ -11,7 +11,7 @@ const Hero = () => {
                     <h1 className="h1">Carreira‑verso com <span className="accent">infinitas possibilidades</span></h1>
                     <p className="lead">Conectamos profissionais, cursos e empresas num só espaço. Monte o seu perfil, candidate-se a vagas e aprenda com cursos práticos.</p>
                     <div className="row" style={{gap:'12px'}}>
-                        <a className="btn primary" href="auth.html">Começar agora</a>
+                        <a className="btn primary" href="/auth">Começar agora</a>
                         <a className="btn" data-link href="#features">Como funciona</a>
                     </div>
                     <div style={{marginTop:'20px',display:'flex',gap:'10px',alignItems:'center',color:'var(--muted)'}}><div className="pill">20k+ Usuários</div><div className="pill">1k+ Vagas</div><div className="pill">300+ Empresas</div></div>

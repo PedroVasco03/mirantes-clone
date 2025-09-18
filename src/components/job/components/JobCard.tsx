@@ -1,62 +1,28 @@
-interface JobCardProps {
+import React from "react";
+import "./jobCard.css"
+
+interface CardProps {
   title: string;
-  company: string;
-  pillText: string;
-  requirements: string;
+  description: string;
+  icon: React.ReactNode;
 }
 
-const JobCard: React.FC<JobCardProps> = ({ title, company, pillText, requirements }) => {
+const JobCard: React.FC<CardProps> = ({ title, description, icon }) => {
+  const lines = typeof description === "string" ? description.split("\n") : description;
   return (
-    <article className="job-card">
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
-          <div
-            style={{
-              width: "48px",
-              height: "48px",
-              borderRadius: "10px",
-              background: "linear-gradient(90deg,#6ea8ff,#7df3d1)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#041017",
-              fontWeight: 800,
-            }}
-          >
-            {title.charAt(0).toUpperCase()}
-          </div>
-          <div>
-            <div style={{ fontWeight: 800 }}>{title}</div>
-            <div
-              style={{
-                color: "var(--muted)",
-                fontSize: "13px",
-                marginTop: "6px",
-              }}
-            >
-              {company}
-            </div>
-          </div>
-        </div>
-
-        <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-          <div className="pill">{pillText}</div>
-          <a className="btn" href="jobs.html">
-            Candidatar
-          </a>
-        </div>
-      </div>
-
-      <div style={{ color: "var(--muted)", fontSize: "14px" }}>
-        Requisitos: {requirements}
-      </div>
-    </article>
+    
+    <div className="bg-[#111827] py-10 my-5 relative border  border-gray-700 rounded-lg p-6 flex flex-col items-center gap-4 hover:shadow-lg transition-shadow duration-300">
+      <div className="text-cyan-400 text-3xl icon">{icon}</div>
+      <h3 className="text-cyan-400 text-xl  font-semibold">{title}</h3>
+      <p className="text-gray-300 text-sm">
+        {lines.map((line, idx) => (
+          <React.Fragment key={idx}>
+           * {line}
+            <br />
+          </React.Fragment>
+        ))}
+      </p>
+    </div>
   );
 };
 
